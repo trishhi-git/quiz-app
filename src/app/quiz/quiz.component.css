@@ -1,0 +1,72 @@
+.quiz-container,
+.result {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #0056b3;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.selected {
+  background-color: #007bff !important;
+  color: #fff !important;
+  border-color: #0056b3 !important;
+}
+
+button[disabled] {
+  margin: auto;
+  color:white;
+  width: 100px;
+  background-color:#007bff;
+  cursor: not-allowed;
+}
+
+/* Specific styles for Next and Try Again buttons */
+button.next,
+button.try-again {
+  width: 200px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin: 1rem auto;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button.next:hover,
+button.try-again:hover {
+  background-color: #0056b3;
+}
